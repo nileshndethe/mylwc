@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="HelloWorld" icon-name="custom:custom14">
+        <div class="slds-m-around_medium">
+            <p> Hello, {greeting}!</p>
+            <lightning-input label="Name" value={greeting} onchange={changeHandler}></lightning-input>
+            <p>
+                    This is an email link:<a href="mailto:jrogers@burlington.com" data-aura-rendered-by="25:3353;a" class="emailuiFormattedEmail" data-aura-class="emailuiFormattedEmail">jrogers@burlington.com</a>
+            </p>
+        </div>
+    </lightning-card>
+</template>
