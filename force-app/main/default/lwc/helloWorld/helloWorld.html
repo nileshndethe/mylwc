@@ -1,11 +1,25 @@
 <template>
-    <lightning-card title="HelloWorld" icon-name="custom:custom14">
-        <div class="slds-m-around_medium">
-            <p> Hello, {greeting}!</p>
-            <lightning-input label="Name" value={greeting} onchange={changeHandler}></lightning-input>
-            <p>
-                    This is an email link:<a href="mailto:jrogers@burlington.com" data-aura-rendered-by="25:3353;a" class="emailuiFormattedEmail" data-aura-class="emailuiFormattedEmail">jrogers@burlington.com</a>
-            </p>
-        </div>
-    </lightning-card>
+  <lightning-card title="HelloWorld" icon-name="custom:custom14">
+    <div class="slds-m-around_medium">
+      <p>Hello, {greeting}!</p>
+      <lightning-input
+        label="Name"
+        value={greeting}
+        onchange={changeHandler}
+      ></lightning-input>
+      <p>
+        This is an mailto email link:<a
+          href="mailto:jrogers@burlington.com"
+          data-aura-rendered-by="25:3353;a"
+          class="emailuiFormattedEmail"
+          data-aura-class="emailuiFormattedEmail"
+          >jrogers@burlington.com</a
+        >
+        This is lwc email link:
+        <lightning-formatted-email
+          value="jrogers@burlington.com"
+        ></lightning-formatted-email>
+      </p>
+    </div>
+  </lightning-card>
 </template>
