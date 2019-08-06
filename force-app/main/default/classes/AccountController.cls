@@ -1,12 +1,13 @@
-public with sharing class AccountController {
+global with sharing class AccountController {
     
-    @AuraEnabled(cacheable=true)
-    public static List<Account> getAccountList() {
-        return [SELECT Id, Name FROM Account LIMIT 10];
+    @auraEnabled
+    public static list<account> getAccounts()
+    {
+        List<sObject> lstAccounts = [select name,accountnumber,industry,fax from Account limit 100];
+        return lstAccounts;
+        
     }
+    
+    //latest changes from venky
 
-    @AuraEnabled(cacheable=true)
-    public static Account getSingleAccount() {
-        return [SELECT Id, Name, Phone, Type FROM Account LIMIT 1];
-    }
 }
