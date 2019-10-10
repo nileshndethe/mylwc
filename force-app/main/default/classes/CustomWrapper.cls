@@ -1,6 +1,3 @@
-/**
-@description this is test class
- */
 public with sharing class CustomWrapper {
 
     class InnerWrapper {

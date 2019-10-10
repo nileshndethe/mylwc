@@ -213,6 +213,9 @@
             "c/recordViewFormStaticContact": [
                 "recordViewFormStaticContact/recordViewFormStaticContact.js"
             ],
+            "c/slotDemo": [
+                "slotDemo/slotDemo.js"
+            ],
             "c/todoList": [
                 "todoList/todoList.js"
             ],

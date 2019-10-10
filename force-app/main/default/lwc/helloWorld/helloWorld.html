@@ -1,25 +1,29 @@
+<!--
+  @Component Name     : helloWorld.html
+  @Description        : 
+  @Author             : Nilesh Dethe
+  @Group              : 
+  @Last Modified By   : Nilesh Dethe
+  @Last Modified On   : 8/14/2019, 2:57:45 PM
+  @Modification Log   : 
+  ==============================================================================
+  Ver         Date                     Author      		      Modification
+  ==============================================================================
+  1.0    8/14/2019, 2:38:55 PM   Nilesh Dethe     Initial Version
+-->
 <template>
-  <lightning-card title="HelloWorld" icon-name="custom:custom14">
-    <div class="slds-m-around_medium">
-      <p>Hello, {greeting}!</p>
-      <lightning-input
-        label="Name"
-        value={greeting}
-        onchange={changeHandler}
-      ></lightning-input>
-      <p>
-        This is an mailto email link:<a
-          href="mailto:jrogers@burlington.com"
-          data-aura-rendered-by="25:3353;a"
-          class="emailuiFormattedEmail"
-          data-aura-class="emailuiFormattedEmail"
-          >jrogers@burlington.com</a
-        >
-        This is lwc email link:
-        <lightning-formatted-email
-          value="jrogers@burlington.com"
-        ></lightning-formatted-email>
-      </p>
-    </div>
-  </lightning-card>
+    <lightning-card title="HelloWorld" icon-name="custom:custom14">
+        <div class="slds-m-around_medium">
+            <p>Hello, {greeting}!</p>
+            <lightning-input
+                label="Name"
+                value={greeting}
+                onchange={changeHandler}
+            ></lightning-input>
+        </div>
+    </lightning-card>
+    <c-slot-demo>
+        <c-hello-conditional-rendering></c-hello-conditional-rendering>
+        <c-hello-iterator></c-hello-iterator>
+    </c-slot-demo>
 </template>
